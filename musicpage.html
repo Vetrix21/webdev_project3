@@ -44,9 +44,15 @@
           <li><a href="https://youtu.be/0VGuugFXI2g?feature=shared">Bring Me The Horizon - Sempiternal</a></li>
         </ul>
         <p>I don't only listen to metal, but it is my main genre. Other genres I like include Rap, Vocaloid, and some pop.</p>
-        <img src="media/album_covers/the_death_card.jpg" alt="Album cover of The Death Card by Sworn In. A drawing of a lotus flower on a black background, 'XIII' written above it.">
-        <img src="media/album_covers/god_ish.jpg" alt="Cover art of the song God-ish by Pinocchio-P. A drawing of a woman in a nun outfit sticking her tongue out.">
-        <img src="media/album_covers/dirt.jpg" alt="Album cover of Dirt by Alice in Chains. An image of a man half buried in dirt.">
+        <div class="slider">
+          <div class="slides">
+            <img class="slide" src="media/album_covers/the_death_card.jpg" alt="Album cover of The Death Card by Sworn In. A drawing of a lotus flower on a black background, 'XIII' written above it.">
+            <img class="slide" src="media/album_covers/god_ish.jpg" alt="Cover art of the song God-ish by Pinocchio-P. A drawing of a woman in a nun outfit sticking her tongue out.">
+            <img class="slide" src="media/album_covers/dirt.jpg" alt="Album cover of Dirt by Alice in Chains. An image of a man half buried in dirt.">
+          </div>
+          <button class="prevbutton" onClick="prevSlide()">&#10094</button>
+          <button class="nextbutton" onClick="nextSlide()">&#10095</button>
+        </div>
       </section>
       <section> <h3>About my band</h3>
         <p>As I've said before, I play bass in a local metal band - Suncrusher. I joined the band in January of 2023, and played my first show with them at Subterranean in August of 2023. We went on a short tour in Summer of 2024, playing in Michigan, Wisconsin, and Chicago.</p>
@@ -63,6 +69,7 @@
       </section>
     </main>
   </div>
+  <script src="index.js"></script>
 </body>
 
 

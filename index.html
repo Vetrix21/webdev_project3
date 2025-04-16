@@ -29,9 +29,15 @@
         <p>My main hobby is music. I love listening to music, and I love playing music. More on the next page, I could yap about my musical interests all day.</p>
         <p><strong>Model Kits</strong></p>
         <p>After music, I enjoy spending time building Gunpla - Plastic Gundam models. It's a very time-consuming hobby, and I like to call it my "weekend killer" from how long some of these models can take to build. Unfortunately, I have not yet watched any of the shows.</p>
-        <img src="media/models/sazabi_1.jpg" alt="Picture of a red model robot brandishing a green sword.">
-        <img src="media/models/sazabi_2.jpg" alt="Close-up shot of a red model robot on one knee, holding a small human figure.">
-        <img src="media/models/sazabi_3.jpg" alt="Zoomed-out picture of a red model robot on one knee, holding a small human figure.">
+        <div class="slider">
+          <div class="slides">
+            <img class="slide" src="media/models/sazabi_1.jpg" alt="Picture of a red model robot brandishing a green sword.">
+            <img class="slide" src="media/models/sazabi_2.jpg" alt="Close-up shot of a red model robot on one knee, holding a small human figure.">
+            <img class="slide" src="media/models/sazabi_3.jpg" alt="Zoomed-out picture of a red model robot on one knee, holding a small human figure.">
+          </div>
+          <button class="prevbutton" onClick="prevSlide()">&#10094</button>
+          <button class="nextbutton" onClick="nextSlide()">&#10095</button>
+        </div>
         <p>This one is the MSN-01 Sazabi, Real Grade. My favorite build so far, both aesthetically and with how fun the building process was.</p>
         <p><strong>Cars</strong></p>
         <p>I also enjoy muscle cars. My dream car is a Mustang Boss 429, though it'd have to be a project car at this point because of how expensive they are. Aside from that, I have a lego model of Dom Toretto's 1970 Dodge Charger sitting near my Gundams.</p>
@@ -53,4 +59,5 @@
       </section>
     </main>
   </div>
+  <script src="index.js"
 </body>

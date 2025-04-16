@@ -100,12 +100,49 @@ section{
 img{
   width: 30%;
   height: auto;
-  display: inline-flex;
-  
+  display: block;
+  margin: 0 auto;
 }
 
 #video iframe{
   aspect-ratio: 16 / 9;
   width: 100%;
   border: 0px;
+}
+
+.slider{
+  position: relative;
+  overflow: hidden;
+}
+
+.slider img{
+  display: none;
+}
+
+img.displaySlide{
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slider button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  background-color: #7C947E;
+  border: none;
+}
+
+.prevbutton{
+  left: 0;
+}
+
+.nextbutton{
+  right: 0;
+}
+
+@keyframes fade{
+  from {opacity: 0.5;}
+  to {opacity: 1;}
 }
