@@ -3,25 +3,23 @@
   <head>
     <title>Simple Marker</title>
     <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
     <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
     </script>
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      gmp-map {
-        height: 100%;
-      }
-
-      /* Optional: Makes the sample page fill the window. */
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css"/>
   </head>
   <body>
+    <header id="header">
+      <h1>Project 2: CSS</h1>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a id="currentpage" href="resumepage.html">Resume</a></li>
+          <li><a href="musicpage.html">Music</a></li>
+          <li><a href="map.html">Map</a></li>
+        </ul>
+      </nav>
+    </header>
     <gmp-map center="41.83318328857422,-87.62381744384766" zoom="14" map-id="DEMO_MAP_ID">
       <gmp-advanced-marker position="41.83318328857422,-87.62381744384766" title="My location"></gmp-advanced-marker>
     </gmp-map>
