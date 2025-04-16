@@ -132,6 +132,7 @@ img.displaySlide{
   font-size: 1.4rem;
   background-color: #7C947E;
   border: none;
+  border-radius: 10px;
 }
 
 .prevbutton{
@@ -145,4 +146,12 @@ img.displaySlide{
 @keyframes fade{
   from {opacity: 0.5;}
   to {opacity: 1;}
+}
+
+button {
+  transition: transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
 }
