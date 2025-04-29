@@ -8,9 +8,43 @@ h1{
 body{
   background-color: #140001;
   padding: 0;
-  color: #7C947E;
   text-align: left;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 320px){
+  body {
+    text-align: center;
+    color: white;
+  }
+  ul {list-style-type: none;}
+  a{
+    text-decoration: none;
+  }
+  #video iframe{
+    aspect-ratio: 4 / 3;
+    width: 80%;
+    border: 0px;
+  }
+}
+
+@media only screen and (min-width: 1920px){
+  body {
+    text-align: left;
+    color: #7C947E;
+  }
+  ul {
+    list-style-type:circle;
+  }
+  a {
+    text-decoration: none;
+    color: #3E5B0B;
+  }
+  #video iframe{
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    border: 0px;
+  }
 }
 
 #page-wrapper{
@@ -54,10 +88,7 @@ header{
   background-color: rgba(0, 0, 0, 0.25);
 }
 
-a{
-  text-decoration: none;
-  color: #3E5B0B;
-}
+
 
 a:visited{
   color: black;
@@ -104,11 +135,11 @@ img{
   margin: 0 auto;
 }
 
-#video iframe{
+/*#video iframe{
   aspect-ratio: 16 / 9;
   width: 100%;
   border: 0px;
-}
+}*/
 
 .slider{
   position: relative;
