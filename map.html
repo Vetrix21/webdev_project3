@@ -4,7 +4,7 @@
     <title>Simple Marker</title>
     <!-- The callback parameter is required, so we use console.debug as a noop -->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY_HERE&callback=console.debug&libraries=maps,marker&v=beta">
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiEawMH9cxBaQ5TvpQL4AJftb__mOwi-4&callback=console.debug&libraries=maps,marker&v=beta">
     </script>
     <link rel="stylesheet" href="./style.css"/>
   </head>
@@ -20,8 +20,10 @@
         </ul>
       </nav>
     </header>
-    <gmp-map center="41.83318328857422,-87.62381744384766" zoom="14" map-id="DEMO_MAP_ID">
-      <gmp-advanced-marker position="41.83318328857422,-87.62381744384766" title="My location"></gmp-advanced-marker>
-    </gmp-map>
+    <div id="map">
+      <gmp-map center="41.83318328857422,-87.62381744384766" zoom="14" map-id="themap">
+        <gmp-advanced-marker position="41.83318328857422,-87.62381744384766" title="My location"></gmp-advanced-marker>
+      </gmp-map>
+    </div>
   </body>
 </html>

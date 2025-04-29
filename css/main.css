@@ -121,8 +121,8 @@ img{
 
 img.displaySlide{
   display: block;
-  animation-name: fade;
-  animation-duration: 1.5s;
+  animation-name: fade-slide;
+  animation-duration: 1s;
 }
 
 .slider button{
@@ -143,9 +143,18 @@ img.displaySlide{
   right: 0;
 }
 
-@keyframes fade{
+/*@keyframes fade{
   from {opacity: 0.5;}
   to {opacity: 1;}
+}*/
+
+@keyframes fade-slide{
+  from {
+    translate: 90vw 0;
+  }
+  to {
+    translate: 0 0;
+  }
 }
 
 button {
@@ -163,9 +172,14 @@ button:hover {
 }
 
 /* Optional: Makes the sample page fill the window. */
-html,
-body {
+html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+#map{
+  height: 80%;
+  padding: 1rem;
+  border-radius: 10px;
 }
